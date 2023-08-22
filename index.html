@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Grid Layout</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+  <style>
+    .card-img-overlay {
+        background-color: rgba(21, 9, 9, 0.857);
+    }
+
+    .nav-link {
+        text-align: center;
+    }
+
+   .inicio {
+    border-radius: 70px;
+    background-color: blueviolet;
+   }
+
+   body {
+    background-color: rgb(240, 183, 198);
+   }
+
+    header {
+        position: relative;
+        top: 0;
+        left: 0;
+        background-color: rgb(240, 183, 198);
+        border-radius: 20px
+        
+    }
+
+    .container {
+        background-color: rgb(240, 183, 198);
+        border-radius: 20px
+    }
+
+
+    .navbar {
+      background-color: rgb(240, 183, 198);
+  
+    }
+
+    .navbar-nav.ml-auto {
+      margin-right: 20px;
+    }
+
+    .card {
+      border-radius: 20px
+    }
+
+    .rounded-image {
+    border-radius: 70px; 
+  }
+
+
+  .custom-btn-color {
+    background-color: rgb(232, 108, 141); 
+    color: white; 
+    border-color: rgb(170, 40, 74); 
+    border: 1000px;
+}
+
+
+
+    footer {
+    color: rgb(255, 255, 255); /* Define a cor do texto dos rótulos como branco */
+    text-align: center; /* Centraliza o conteúdo, incluindo o botão */
+    padding: 9px;
+    position: relative;
+    background-color: rgba(157, 38, 121, 0.229);
+    width: 100%;
+    bottom: 0;
+    text-shadow: 2px 2px 4px rgba(158, 9, 121, 0.5); /* Adiciona sombra nas palavras do rodapé */
+  }
+  
+
+ </style>
+
+
+</head>
+<body>
+  <header id="cabeçalho">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./img/image-removebg-preview.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+      
+    
+      <!-- carousel -->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <!-- indicadores -->
+      <ol class="carousel-indicators">
+        <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+
+      </ol>
+      
+      <!-- slides do carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/OUR BEAST SELLER/1.png" class="d-block w-100" alt="Slide 1">
+          
+        </div>
+        <div class="carousel-item">
+          <img src="img/OUR BEAST SELLER/2.png" class="d-block w-100" alt="Slide 2">
+         
+        </div>
+        
+      </div>
+      
+      <!-- controles do carousel -->
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+      </a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+ <div class="container mt-4">
+    <div class="row">
+      <!-- Item 1 -->
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card text-bg-dark">
+            <img src="./img/93a889ed62b4abc82c997e9ba0295e33.jpg" class="rounded">
+          <div class="card-body">
+            <h5 class="card-title">para o dia a dia</h5>
+            <a href="#" class="btn custom-btn-color">Saiba mais</a>
+
+        </div>
+        </div>
+      </div>
+      
+      <!-- Item 2 -->
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card">
+            <img src="./img/hidratantes.jpg" class="rounded" >
+          <div class="card-body">
+            <h5 class="card-title">hair care</h5>
+            <a href="#" class="btn custom-btn-color">Saiba mais</a>
+        </div>
+        </div>
+      </div>
+      
+      <!-- Item 3 -->
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card">
+            <img src="./img/corporais.jpg"class="rounded" >
+          <div class="card-body">
+            <h5 class="card-title">hidratação</h5>
+            <a href="#" class="btn custom-btn-color">Saiba mais</a>
+        </div>
+        </div>
+      </div>
+      
+      <!-- Item 4 -->
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card">
+            <img src="./img/óleos.jpg" class="rounded" >
+          <div class="card-body">
+            <h5 class="card-title">óleos</h5>
+            <a href="#" class="btn custom-btn-color">Saiba mais</a>
+        </div>
+        </div>
+      </div>
+      
+      <!-- Item 5 -->
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card">
+            <img src="./img/lipoil.jpg" class="rounded" >
+          <div class="card-body">
+            <h5 class="card-title">lip kits</h5>
+            <a href="#" class="btn custom-btn-color">Saiba mais</a>
+        </div>
+        </div>
+      </div>
+      
+      <!-- Item 6 -->
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card">
+            <img src="./img/lip oil.jpg" class="rounded" >
+          <div class="card-body">
+            <h5 class="card-title">lip oil</h5>
+            <a href="#" class="btn custom-btn-color">Saiba mais</a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<footer class="mt-5 text-center">
+  <p>Todos os direitos reservados &copy; Palloma G. | 2023</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
